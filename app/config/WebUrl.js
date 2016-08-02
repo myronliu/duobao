@@ -1,6 +1,54 @@
 
 module.exports={
 
+//     server {
+//         listen  80;
+//         server_name  example1.com www. example1.com;
+//         access_log  /www/access_ example1.log  main;
+//         location / {
+//             root   /www/example1.com;
+//             index  index.php index.html index.htm;
+//         }
+//         error_page   500 502 503 504  /50x.html;
+//         location = /50x.html {
+//             root   /usr/share/nginx/html;
+//         }
+//        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+//         location ~ .php$ {
+//             fastcgi_pass   127.0.0.1:9000;
+//             fastcgi_index  index.php;
+//             fastcgi_param  SCRIPT_FILENAME  /www/example1.com/$fastcgi_script_name;
+//             include        fastcgi_params;
+//         }
+//         location ~ /.ht {
+//             deny  all;
+//         }
+// }
+
+// server {
+//         listen  80;
+//         server_name  example2.com www. example2.com;
+//         access_log  /www/access_ example1.log  main;
+//         location / {
+//             root   /www/example2.com;
+//             index  index.php index.html index.htm;
+//         }
+//         error_page   500 502 503 504  /50x.html;
+//         location = /50x.html {
+//             root   /usr/share/nginx/html;
+//         }
+//        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+//         location ~ .php$ {
+//             fastcgi_pass   127.0.0.1:9000;
+//             fastcgi_index  index.php;
+//             fastcgi_param  SCRIPT_FILENAME  /www/example2.com/$fastcgi_script_name;
+//             include        fastcgi_params;
+//         }
+//         location ~ /.ht {
+//             deny  all;
+//         }
+// }
+
     index:'/',
     /**
      *  腾讯应用宝下载
