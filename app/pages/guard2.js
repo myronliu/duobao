@@ -4,11 +4,19 @@ export default class extends BasePage {
     
   }
 
+  gotoQ3(){
+    window.to("/question?level=3")
+  }
+
+  gotoQ4(){
+    window.to("/question?level=4")
+  }
+
   render() {
     return (
       <div className="guard1">
-        <img className="ka1" src="/images/3.png" />
-        <img className="ka2" src="/images/4.png" />
+        <img onTouchEnd={this.gotoQ3} className="ka1" src="/images/3.png" />
+        <img onTouchEnd={this.gotoQ4} className="ka2" src="/images/4.png" />
       </div>
     )
   }

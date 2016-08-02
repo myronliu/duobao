@@ -25,14 +25,7 @@ export default class Index extends React.Component {
   apiSuccess(url, body) {}
   apiFail(url, status, message, body) {
     this.showLoading(false)
-    if (status == 1004 || status == 1088) { //1004为用户在其他地方登录， 1088为用户升级未完成
-      cleanUserCache();
-      this.gotoHomePage();
-    } else if (status == 1021 && url === UrlConfig.balanceCheck) {
-
-    } else {
-      Toast.show(message, 1500);
-    }
+    Toast.show(message, 1500);
   }
   showLoading(show) {
     this.setState({

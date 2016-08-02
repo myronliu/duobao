@@ -34,7 +34,7 @@ var Router = EvoFlux.createRouter({
     ReactDOM.render(<Guard2 />, container);
   },
   '/question': function(){
-    ReactDOM.render(<Question />, container);
+    ReactDOM.render(<Question level={this.query('level')}/>, container);
   },
   // '/list': function(){
   //   ReactDOM.render(<List />, container);

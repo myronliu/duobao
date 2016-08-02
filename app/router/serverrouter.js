@@ -6,7 +6,7 @@ var ReactDOMServer = require('react-dom/server');
 var fs= require('fs')
 var patha = require('path');
 
-global.ajaxConfig = {url:"http://localhost:3009",header:{'Content-Type': 'application/json','X-KJT-Agent': 'h511111111111111111111111;h511111111111111111111111;h5;h5;;h5;h5;1.0.0;WIFI;h511111111111111111111111'}}
+global.ajaxConfig = {url:"http://139.196.203.86:8080/api/app",header:{'Content-Type': 'application/json','X-KJT-Agent': 'h511111111111111111111111;h511111111111111111111111;h5;h5;;h5;h5;1.0.0;WIFI;h511111111111111111111111'}}
 
 var ErrorView = React.createFactory(require('../pages/error'));
 var Home = React.createFactory(require('../pages/home'));
@@ -23,7 +23,7 @@ router.get('/error',function(req,res){
 })
 
 router.get('/',function(req,res){
-  if(req.cookies.name){
+  if(req.cookies.name && false){
     res.redirect('/question');
   }else{
     var reactHtml = ReactDOMServer.renderToString(Home());
@@ -42,8 +42,12 @@ router.get('/guard2',function(req,res){
 })
 
 router.get('/question',function(req,res){
-  var reactHtml = ReactDOMServer.renderToString(Question());
-  res.render('index', {reactOutput: reactHtml,title:'题目'});
+  if(!req.cookies.name && !req.cookies.token){
+    res.redirect('/');
+  }else{
+    var reactHtml = ReactDOMServer.renderToString(Question({level: req.query.level}));
+    res.render('index', {reactOutput: reactHtml,title:'题目'});
+  }
 })
 
 // router.get('/list',function(req,res){

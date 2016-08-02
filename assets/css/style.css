@@ -326,11 +326,6 @@ input[type="button"] {
 /*   Layout Rules
 /*------------------------------------------------*/
 /*==========  Base  ==========*/
-/* line 7, ../../app/theme/sass/_layout.scss */
-.header {
-  box-shadow: 0 0 8px 0px #D0D0D0;
-}
-
 /* line 11, ../../app/theme/sass/_layout.scss */
 .l-container, .top-notify, .top-link, .main-menu, .main-content, .footer-corp, .footer-frq, .main-footer {
   width: 1200px;
@@ -426,13 +421,14 @@ input[type="button"] {
   width: 100%;
   height: 25px;
   display: block;
+  color: white;
 }
-/* line 37, ../../app/theme/sass/pages/_home.scss */
+/* line 38, ../../app/theme/sass/pages/_home.scss */
 .home .login .button {
   width: 20%;
   display: inline-block;
 }
-/* line 40, ../../app/theme/sass/pages/_home.scss */
+/* line 41, ../../app/theme/sass/pages/_home.scss */
 .home .login .button > img {
   width: 30px;
   vertical-align: middle;
@@ -484,27 +480,27 @@ input[type="button"] {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background-color: #318fbb;
+  background-image: url(/images/head1.png);
   color: white;
   font-size: 20px;
   font-weight: bolder;
   text-align: center;
 }
-/* line 14, ../../app/theme/sass/pages/_question.scss */
+/* line 15, ../../app/theme/sass/pages/_question.scss */
 .question .title {
   height: 40px;
   line-height: 40px;
   color: white;
-  background-color: #1eb0b7;
+  background-image: url(/images/head2.png);
 }
-/* line 19, ../../app/theme/sass/pages/_question.scss */
+/* line 21, ../../app/theme/sass/pages/_question.scss */
 .question .title .back {
   width: 10%;
   display: inline-block;
   text-align: center;
   font-weight: bolder;
 }
-/* line 26, ../../app/theme/sass/pages/_question.scss */
+/* line 28, ../../app/theme/sass/pages/_question.scss */
 .question .content {
   margin-top: 30px;
   padding-left: 10px;
@@ -514,7 +510,7 @@ input[type="button"] {
   height: 30px;
   line-height: 30px;
 }
-/* line 35, ../../app/theme/sass/pages/_question.scss */
+/* line 37, ../../app/theme/sass/pages/_question.scss */
 .question .answerItem {
   margin-left: 10px;
   margin-right: 10px;
@@ -524,9 +520,135 @@ input[type="button"] {
   line-height: 40px;
   padding-left: 10px;
 }
-/* line 44, ../../app/theme/sass/pages/_question.scss */
+/* line 46, ../../app/theme/sass/pages/_question.scss */
 .question .button {
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+/* line 1, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 22;
+}
+/* line 9, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .boxMain {
+  text-align: center;
+}
+/* line 11, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .boxMain img {
+  width: 90%;
+}
+/* line 16, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .kuang {
+  background-image: url(/images/kuang.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 24, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .kuang .kuang-title {
+  color: red;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 10px;
+  padding-bottom: 2px;
+}
+/* line 31, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .kuang .jinbi {
+  text-align: center;
+}
+/* line 33, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .kuang .jinbi img {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 39, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .kuang .jinbi span {
+  height: 35px;
+  line-height: 35px;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+  color: black;
+  font-weight: bolder;
+}
+/* line 50, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .reward-ok {
+  text-align: center;
+}
+/* line 52, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .reward-ok img {
+  width: 100px;
+  margin-top: 15px;
+}
+
+/* line 59, ../../app/theme/sass/helper/_reward.scss */
+.display {
+  display: none;
+}
+
+/* line 1, ../../app/theme/sass/helper/_total.scss */
+.totalDialog {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 22;
+}
+/* line 9, ../../app/theme/sass/helper/_total.scss */
+.totalDialog .total-boxMain {
+  text-align: center;
+}
+/* line 11, ../../app/theme/sass/helper/_total.scss */
+.totalDialog .total-boxMain img {
+  width: 300px;
+}
+/* line 15, ../../app/theme/sass/helper/_total.scss */
+.totalDialog .total-boxMain span {
+  position: absolute;
+  display: block;
+  left: 37%;
+  top: 207px;
+  font-size: 24px;
+  color: white;
+}
+/* line 24, ../../app/theme/sass/helper/_total.scss */
+.totalDialog .total-kuang {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+/* line 29, ../../app/theme/sass/helper/_total.scss */
+.totalDialog .total-reward-ok {
+  text-align: center;
+}
+/* line 31, ../../app/theme/sass/helper/_total.scss */
+.totalDialog .total-reward-ok img {
+  width: 100px;
+  margin-top: 15px;
+}
+
+/* line 38, ../../app/theme/sass/helper/_total.scss */
+.display {
+  display: none;
+}
+
+/* line 1, ../../app/theme/sass/components/_checkbox.scss */
+.checkbox {
+  display: table-cell;
+  vertical-align: middle;
 }

@@ -1,4 +1,15 @@
 var React = require('react');
+var show={
+  position: 'absolute',
+  width: '100%',
+  height: '100%',
+  paddingTop: '80%',
+  opacity: '0.5',
+  backgroundColor: 'black',
+}
+var hide={
+  display: 'none'
+}
 var center={
   width:'76%',
   marginLeft:'10%',
@@ -31,7 +42,7 @@ var backStyle={opacity:1}
 module.exports = React.createClass({
   render: function(){
     return (
-      <div className={this.props.showLoading ? "show" : "hide"}>
+      <div style={this.props.showLoading ? show : hide}>
         <div style={backStyle} className="twobtnalert">
            <table style={table}>
               <tbody>
