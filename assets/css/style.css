@@ -512,7 +512,6 @@ input[type="button"] {
   color: black;
   font-size: 16px;
   font-weight: bolder;
-  height: 30px;
   line-height: 30px;
 }
 /* line 37, ../../app/theme/sass/pages/_question.scss */
@@ -530,6 +529,7 @@ input[type="button"] {
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 /* line 1, ../../app/theme/sass/helper/_reward.scss */
