@@ -380,25 +380,30 @@ input[type="button"] {
 /* line 1, ../../app/theme/sass/pages/_home.scss */
 .home {
   height: 100%;
+  width: 100%;
   background-image: url(/images/back.png);
-  background-size: contain;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* line 6, ../../app/theme/sass/pages/_home.scss */
+/* line 8, ../../app/theme/sass/pages/_home.scss */
 .home .header {
   width: 80%;
   margin-top: 30px;
 }
-/* line 10, ../../app/theme/sass/pages/_home.scss */
+/* line 12, ../../app/theme/sass/pages/_home.scss */
 .home .baozang {
-  width: 100%;
+  width: 90%;
 }
-/* line 13, ../../app/theme/sass/pages/_home.scss */
+/* line 15, ../../app/theme/sass/pages/_home.scss */
 .home .login {
   height: 40px;
   line-height: 40px;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
 }
-/* line 16, ../../app/theme/sass/pages/_home.scss */
+/* line 21, ../../app/theme/sass/pages/_home.scss */
 .home .login .xingming {
   color: white;
   font-size: larger;
@@ -406,12 +411,12 @@ input[type="button"] {
   display: inline-block;
   width: 20%;
 }
-/* line 23, ../../app/theme/sass/pages/_home.scss */
+/* line 28, ../../app/theme/sass/pages/_home.scss */
 .home .login .text {
   width: 50%;
   display: inline-block;
 }
-/* line 26, ../../app/theme/sass/pages/_home.scss */
+/* line 31, ../../app/theme/sass/pages/_home.scss */
 .home .login .text .input {
   border-style: solid;
   border-width: 1px;
@@ -423,12 +428,12 @@ input[type="button"] {
   display: block;
   color: white;
 }
-/* line 38, ../../app/theme/sass/pages/_home.scss */
+/* line 43, ../../app/theme/sass/pages/_home.scss */
 .home .login .button {
   width: 20%;
   display: inline-block;
 }
-/* line 41, ../../app/theme/sass/pages/_home.scss */
+/* line 46, ../../app/theme/sass/pages/_home.scss */
 .home .login .button > img {
   width: 30px;
   vertical-align: middle;
