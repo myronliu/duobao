@@ -91,7 +91,18 @@ export default class extends BasePage {
         })
         break;
       case this.state.uploadScoreUrl:
-
+        if(body.data="updated"){
+          Toast.show("更新成功");
+          if(this.state.data.level=="1"){
+            window.to("/guard1")
+          }else if(this.state.data.level=="2"){
+            window.to("/guard2")
+          }else if(this.state.data.level=="3"){
+            window.to("/guard2")
+          }else if(this.state.data.level=="4"){
+            window.to("/guard1")
+          }
+        }
         if(this.state.data.level=="4"){
           this.setState({
             totalShow: true
