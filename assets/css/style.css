@@ -399,11 +399,12 @@ input[type="button"] {
 .home .login {
   height: 40px;
   line-height: 40px;
-  position: absolute;
   width: 100%;
-  bottom: 20px;
+  margin-top: 20px;
+  background-color: #3783e5;
+  padding-bottom: 20px;
 }
-/* line 21, ../../app/theme/sass/pages/_home.scss */
+/* line 22, ../../app/theme/sass/pages/_home.scss */
 .home .login .xingming {
   color: white;
   font-size: larger;
@@ -411,12 +412,12 @@ input[type="button"] {
   display: inline-block;
   width: 20%;
 }
-/* line 28, ../../app/theme/sass/pages/_home.scss */
+/* line 29, ../../app/theme/sass/pages/_home.scss */
 .home .login .text {
   width: 50%;
   display: inline-block;
 }
-/* line 31, ../../app/theme/sass/pages/_home.scss */
+/* line 32, ../../app/theme/sass/pages/_home.scss */
 .home .login .text .input {
   border-style: solid;
   border-width: 1px;
@@ -428,12 +429,12 @@ input[type="button"] {
   display: block;
   color: white;
 }
-/* line 43, ../../app/theme/sass/pages/_home.scss */
+/* line 44, ../../app/theme/sass/pages/_home.scss */
 .home .login .button {
   width: 20%;
   display: inline-block;
 }
-/* line 46, ../../app/theme/sass/pages/_home.scss */
+/* line 47, ../../app/theme/sass/pages/_home.scss */
 .home .login .button > img {
   width: 30px;
   vertical-align: middle;
