@@ -22,7 +22,7 @@ export default class extends BasePage {
     switch(url){
       case this.state.loginurl:
         Cookie.setCookie("token", body.data, 1);
-        window.to('/guard1');
+        window.to('/guanka');
         break;
     }
   }
