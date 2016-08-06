@@ -22,6 +22,11 @@ export default class extends BasePage {
     switch(url){
       case this.state.loginurl:
         Cookie.setCookie("token", body.data, 1);
+        Cookie.setCookie("signed", "", 1);
+        Cookie.setCookie("guard1", "", 1);
+        Cookie.setCookie("guard2", "", 1);
+        Cookie.setCookie("guard3", "", 1);
+        Cookie.setCookie("guard4", "", 1);
         window.to('/guanka');
         break;
     }
