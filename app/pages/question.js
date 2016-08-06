@@ -7,6 +7,7 @@ import Loading from '../helper/loading';
 import Reward from '../helper/reward';
 import Total from '../helper/total';
 import Toast from '../helper/toast';
+import Cookie from '../helper/cookie';
 var ans={};
 export default class extends BasePage {
   state={
@@ -91,17 +92,19 @@ export default class extends BasePage {
         })
         break;
       case this.state.uploadScoreUrl:
+        Cookie.setCookie("guard"+this.props.level, true, 1);
         if(body.data=="updated"){
           Toast.show("更新成功");
-          if(this.state.data.level=="1"){
-            window.to("/guard1")
-          }else if(this.state.data.level=="2"){
-            window.to("/guard2")
-          }else if(this.state.data.level=="3"){
-            window.to("/guard2")
-          }else if(this.state.data.level=="4"){
-            window.to("/guard1")
-          }
+          // if(this.state.data.level=="1"){
+          //   window.to("/guard1")
+          // }else if(this.state.data.level=="2"){
+          //   window.to("/guard2")
+          // }else if(this.state.data.level=="3"){
+          //   window.to("/guard2")
+          // }else if(this.state.data.level=="4"){
+          //   window.to("/guard1")
+          // }
+          window.to("/guanka");
         }else{
           if(this.state.data.level=="4"){
             this.setState({
@@ -148,17 +151,19 @@ export default class extends BasePage {
   }
 
   handleTotal(){
-    window.to("/guard1");
+    window.to("/guanka");
+    // window.to("/guard1");
   }
 
   handleReward(){
-    if(this.state.data.level=="1"){
-      window.to("/guard1")
-    }else if(this.state.data.level=="2"){
-      window.to("/guard2")
-    }else if(this.state.data.level=="3"){
-      window.to("/guard2")
-    }
+    // if(this.state.data.level=="1"){
+    //   window.to("/guard1")
+    // }else if(this.state.data.level=="2"){
+    //   window.to("/guard2")
+    // }else if(this.state.data.level=="3"){
+    //   window.to("/guard2")
+    // }
+    window.to("/guanka");
   }
 
   handleBack(){

@@ -13,6 +13,7 @@ var Home = React.createFactory(require('../pages/home'));
 var Guard1 = React.createFactory(require('../pages/guard1'));
 var Guard2 = React.createFactory(require('../pages/guard2'));
 var Question = React.createFactory(require('../pages/question'));
+var GuanKa = React.createFactory(require('../pages/guanka'));
 // var List = React.createFactory(require('../pages/list'));
 // var Vote = React.createFactory(require('../pages/vote'));
 // var Result = React.createFactory(require('../pages/result'));
@@ -29,6 +30,11 @@ router.get('/',function(req,res){
     var reactHtml = ReactDOMServer.renderToString(Home());
     res.render('index', {reactOutput: reactHtml,title:'首页'});
   }
+})
+
+router.get('/guanka',function(req,res){
+  var reactHtml = ReactDOMServer.renderToString(GuanKa());
+  res.render('guanka', {reactOutput: reactHtml,title:'关卡'});
 })
 
 router.get('/guard1',function(req,res){

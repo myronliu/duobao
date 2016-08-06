@@ -4,6 +4,7 @@ import globleImport from '../helper/globalImport.js'
 var EvoFlux = require('evoflux');
 var ErrorView = require('../pages/error');
 var Home = require('../pages/home');
+var GuanKa = require('../pages/guanka');
 var Guard1 = require('../pages/guard1');
 var Guard2 = require('../pages/guard2');
 var Question = require('../pages/question');
@@ -26,6 +27,9 @@ var Router = EvoFlux.createRouter({
   },
   '/': function(){
     ReactDOM.render(<Home />, container);
+  },
+  '/guanka': function(){
+    ReactDOM.render(<GuanKa />, container);
   },
   '/guard1': function(){
     ReactDOM.render(<Guard1 />, container);

@@ -21,7 +21,7 @@ export default class extends BasePage {
     this.showLoading(false);
     switch(url){
       case this.state.loginurl:
-        Cookie.setCookie("token", body.data, 7);
+        Cookie.setCookie("token", body.data, 1);
         window.to('/guard1');
         break;
     }

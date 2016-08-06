@@ -440,6 +440,119 @@ input[type="button"] {
   vertical-align: middle;
 }
 
+/* line 1, ../../app/theme/sass/pages/_guanka.scss */
+.guanka {
+  height: 736px;
+  width: 100%;
+  background-image: url(/images/yx.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 736px;
+}
+/* line 8, ../../app/theme/sass/pages/_guanka.scss */
+.guanka > img {
+  width: 55px;
+}
+/* line 11, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .guan1 {
+  position: absolute;
+  top: 203px;
+  left: 31%;
+}
+/* line 16, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .guan2 {
+  position: absolute;
+  top: 317px;
+  left: 75%;
+}
+/* line 21, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .guan3 {
+  position: absolute;
+  top: 471px;
+  left: 9%;
+}
+/* line 26, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .guan4 {
+  position: absolute;
+  top: 495px;
+  left: 81%;
+}
+/* line 31, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .guan5 {
+  position: absolute;
+  top: 627px;
+  left: 33%;
+}
+/* line 36, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .bx {
+  width: 100px;
+}
+/* line 39, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .bx1 {
+  position: absolute;
+  top: 213px;
+  left: 5%;
+}
+/* line 44, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .bx2 {
+  position: absolute;
+  top: 297px;
+  left: 49%;
+}
+/* line 49, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .bx3 {
+  position: absolute;
+  top: 443px;
+  left: 16%;
+}
+/* line 54, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .bx4 {
+  position: absolute;
+  top: 536px;
+  left: 62%;
+}
+/* line 59, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .bx5 {
+  position: absolute;
+  top: 640px;
+  left: 5%;
+}
+/* line 64, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .title {
+  color: white;
+  font-size: 1.5rem;
+}
+/* line 68, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .title1 {
+  position: absolute;
+  top: 263px;
+  left: 29%;
+}
+/* line 73, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .title2 {
+  position: absolute;
+  top: 375px;
+  left: 72%;
+}
+/* line 78, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .title3 {
+  position: absolute;
+  top: 534px;
+  left: 1%;
+}
+/* line 83, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .title4 {
+  position: absolute;
+  top: 473px;
+  left: 83%;
+}
+/* line 88, ../../app/theme/sass/pages/_guanka.scss */
+.guanka .title5 {
+  position: absolute;
+  top: 606px;
+  left: 31%;
+}
+
 /* line 1, ../../app/theme/sass/pages/_guard1.scss */
 .guard1 {
   height: 100%;
@@ -551,7 +664,14 @@ input[type="button"] {
 .bidlcjDialog .boxMain img {
   width: 90%;
 }
-/* line 16, ../../app/theme/sass/helper/_reward.scss */
+/* line 15, ../../app/theme/sass/helper/_reward.scss */
+.bidlcjDialog .boxMain .signed {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  padding-top: 10px;
+}
+/* line 22, ../../app/theme/sass/helper/_reward.scss */
 .bidlcjDialog .kuang {
   background-image: url(/images/kuang.png);
   background-repeat: no-repeat;
@@ -561,7 +681,7 @@ input[type="button"] {
   margin: 0 auto;
   text-align: center;
 }
-/* line 24, ../../app/theme/sass/helper/_reward.scss */
+/* line 30, ../../app/theme/sass/helper/_reward.scss */
 .bidlcjDialog .kuang .kuang-title {
   color: red;
   font-size: 18px;
@@ -569,18 +689,18 @@ input[type="button"] {
   padding: 10px;
   padding-bottom: 2px;
 }
-/* line 31, ../../app/theme/sass/helper/_reward.scss */
+/* line 37, ../../app/theme/sass/helper/_reward.scss */
 .bidlcjDialog .kuang .jinbi {
   text-align: center;
 }
-/* line 33, ../../app/theme/sass/helper/_reward.scss */
+/* line 39, ../../app/theme/sass/helper/_reward.scss */
 .bidlcjDialog .kuang .jinbi img {
   width: 35px;
   height: 35px;
   display: inline-block;
   vertical-align: top;
 }
-/* line 39, ../../app/theme/sass/helper/_reward.scss */
+/* line 45, ../../app/theme/sass/helper/_reward.scss */
 .bidlcjDialog .kuang .jinbi span {
   height: 35px;
   line-height: 35px;
@@ -590,17 +710,17 @@ input[type="button"] {
   color: black;
   font-weight: bolder;
 }
-/* line 50, ../../app/theme/sass/helper/_reward.scss */
+/* line 56, ../../app/theme/sass/helper/_reward.scss */
 .bidlcjDialog .reward-ok {
   text-align: center;
 }
-/* line 52, ../../app/theme/sass/helper/_reward.scss */
+/* line 58, ../../app/theme/sass/helper/_reward.scss */
 .bidlcjDialog .reward-ok img {
   width: 100px;
   margin-top: 15px;
 }
 
-/* line 59, ../../app/theme/sass/helper/_reward.scss */
+/* line 65, ../../app/theme/sass/helper/_reward.scss */
 .display {
   display: none;
 }
