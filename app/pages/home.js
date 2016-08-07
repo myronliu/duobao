@@ -22,6 +22,7 @@ export default class extends BasePage {
     switch(url){
       case this.state.loginurl:
         if(Cookie.getCookie("name")!=this.refs.name.value){
+          Cookie.setCookie("name", this.refs.name.value, 1);
           Cookie.setCookie("signed", "", 1);
           Cookie.setCookie("guard1", "", 1);
           Cookie.setCookie("guard2", "", 1);
@@ -39,7 +40,6 @@ export default class extends BasePage {
     if (Name.length === 0) {
       Toast.show('请输入姓名', 1500);
     } else {
-      Cookie.setCookie("name", Name, 7);
       this.setState({
         loginurl: UrlConfig.login+"?name=" + Name
       })
