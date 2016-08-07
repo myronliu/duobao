@@ -59,16 +59,16 @@ export default class extends BasePage {
     if(this.state.data.questionType==="OBJECTIVE_S"){
       return this.state.answers.map(function(item,i){
         return (
-          <div key={i} className="answerItem">
-            <input type="radio" checked={this.state.ans[item] ? "checked" : ""} onChange={this.handleOSAnswer.bind(this, item)}/>{item}
+          <div key={i} className="answerItem" onTouchEnd={this.handleOSAnswer.bind(this, item)}>
+            <input type="radio" checked={this.state.ans[item] ? "checked" : ""} />{item}
           </div>
         )
       }.bind(this))
     }else if(this.state.data.questionType==="OBJECTIVE_M"){
       return this.state.answers.map(function(item,i){
         return (
-          <div key={i} className="answerItem">
-            <input type="checkbox" checked={this.state.ans[item] ? "checked" : ""} onChange={this.handleOMAnswer.bind(this, item)}/>{item}
+          <div key={i} className="answerItem" onTouchEnd={this.handleOMAnswer.bind(this, item)}>
+            <input type="checkbox" checked={this.state.ans[item] ? "checked" : ""} />{item}
           </div>
         )
       }.bind(this))
@@ -151,7 +151,13 @@ export default class extends BasePage {
   }
 
   handleTotal(){
-    window.to("/guanka");
+    // window.to("/guanka");
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+      WeixinJSBridge.call('closeWindow')
+    }else{
+      window.close();
+    }
     // window.to("/guard1");
   }
 
