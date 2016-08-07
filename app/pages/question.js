@@ -95,18 +95,14 @@ export default class extends BasePage {
         Cookie.setCookie("guard"+this.props.level, true, 1);
         if(body.data=="updated"){
           Toast.show("更新成功");
-          // if(this.state.data.level=="1"){
-          //   window.to("/guard1")
-          // }else if(this.state.data.level=="2"){
-          //   window.to("/guard2")
-          // }else if(this.state.data.level=="3"){
-          //   window.to("/guard2")
-          // }else if(this.state.data.level=="4"){
-          //   window.to("/guard1")
-          // }
           window.to("/guanka");
         }else{
-          if(this.state.data.level=="4"){
+          var signed = Cookie.getCookie("signed") == "true";
+          var guard1 = Cookie.getCookie("guard1") == "true";
+          var guard2 = Cookie.getCookie("guard2") == "true";
+          var guard3 = Cookie.getCookie("guard3") == "true";
+          var guard4 = Cookie.getCookie("guard4") == "true";
+          if(signed && guard1 && guard2 && guard3 && guard4){
             this.setState({
               totalShow: true
             })
@@ -151,24 +147,16 @@ export default class extends BasePage {
   }
 
   handleTotal(){
-    // window.to("/guanka");
     var ua = navigator.userAgent.toLowerCase();
     if(ua.match(/MicroMessenger/i)=="micromessenger") {
       WeixinJSBridge.call('closeWindow')
     }else{
       window.close();
     }
-    // window.to("/guard1");
   }
 
   handleReward(){
-    // if(this.state.data.level=="1"){
-    //   window.to("/guard1")
-    // }else if(this.state.data.level=="2"){
-    //   window.to("/guard2")
-    // }else if(this.state.data.level=="3"){
-    //   window.to("/guard2")
-    // }
+    Toast.show("请继续完成所有关卡～");
     window.to("/guanka");
   }
 
