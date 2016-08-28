@@ -16,6 +16,7 @@
     "react-swiper": "^0.1.4",
     "react-tappable": "^0.7.1",
     "react-tween-state": "^0.0.5",
+    "socket.io": "^1.4.8",
     "superagent": "^0.21.0",
     "swipe-js-iso": "^2.0.1"
   },

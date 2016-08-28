@@ -14,7 +14,8 @@ import TwoBtnAlert from '../components/twobtnalert'
 export default class extends BasePage {
   state={
     disabled: false,
-    showLoading: false
+    showLoading: false,
+    srcc: "/images/xiu.png"
   };
 
   apiSuccess(url,body){
@@ -50,13 +51,19 @@ export default class extends BasePage {
 
   componentDidMount(){
     super.componentDidMount();
+    var socket = io();
+    socket.on('chat message', function(msg){
+      this.setState({
+        srcc: msg
+      })
+    }.bind(this));
   }
 
   render() {
     return (
       <div className="home">
         <Loading showLoading={this.state.showLoading}/>
-        <img className="header" src="/images/xiu.png" />
+        <img className="header" src={this.state.srcc} />
         <img className="baozang" src="/images/baozang.png" />
         <div className="login">
           <span className="xingming">姓名</span>
