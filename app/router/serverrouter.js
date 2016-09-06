@@ -6,7 +6,7 @@ var ReactDOMServer = require('react-dom/server');
 var fs= require('fs')
 var patha = require('path');
 
-global.ajaxConfig = {url:"http://139.196.203.86:8080/api/app",header:{'Content-Type': 'application/json','X-KJT-Agent': 'h511111111111111111111111;h511111111111111111111111;h5;h5;;h5;h5;1.0.0;WIFI;h511111111111111111111111'}}
+global.ajaxConfig = {url:"http://localhost:8080/api/app",header:{'Content-Type': 'application/json','X-KJT-Agent': 'h511111111111111111111111;h511111111111111111111111;h5;h5;;h5;h5;1.0.0;WIFI;h511111111111111111111111'}}
 
 var ErrorView = React.createFactory(require('../pages/error'));
 var Home = React.createFactory(require('../pages/home'));
