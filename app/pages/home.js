@@ -51,12 +51,12 @@ export default class extends BasePage {
 
   componentDidMount(){
     super.componentDidMount();
-    var socket = io();
-    socket.on('chat message', function(msg){
-      this.setState({
-        srcc: msg
-      })
-    }.bind(this));
+    // var socket = io();
+    // socket.on('chat message', function(msg){
+    //   this.setState({
+    //     srcc: msg
+    //   })
+    // }.bind(this));
   }
 
   render() {
